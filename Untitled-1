@@ -1,0 +1,6 @@
+import openai
+
+openai.api_key = "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"
+prompt = "say this is a test"
+response = openai.Completion.create(engine="text-davinci-001", prompt=prompt, max_tokens=6)
+print(response)
