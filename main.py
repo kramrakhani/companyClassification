@@ -2,7 +2,7 @@ import openai
 import pandas as pd
 import json
 
-openai.api_key = "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"
+openai.api_key = "API KEY"
 input_df = pd.read_csv('model_input.csv')
 input_df = input_df.to_json(orient='records')
 with open("test1.json", "w") as outfile:
